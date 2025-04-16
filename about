@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ursula Crawford | About</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Inter:wght@300;500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #fefefe;
+      color: #1a1a1a;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #fff;
+      padding: 60px 20px 30px;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    nav {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    nav a {
+      margin: 0 10px;
+      font-weight: 500;
+      color: #333;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .about {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+      font-size: 1.1rem;
+    }
+
+    .about h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.9rem;
+      color: #777;
+      border-top: 1px solid #ddd;
+    }
+
+    a {
+      color: #333;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Ursula Crawford</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="cv.html">CV</a>
+    </nav>
+  </header>
+
+  <section class="about">
+    <h2>About Me</h2>
+    <p>Hello, I’m Ursula Crawford – a stylist with a passion for creating timeless and expressive looks. My work spans editorial, commercial, and personal styling, with a focus on clean silhouettes, color play, and unique textures that bring each story to life. Whether it’s on set or one-on-one, my goal is to elevate every client’s vision through style.</p>
+
+    <p>Rooted in both classic fashion foundations and forward-thinking aesthetics, I bring a refined but approachable perspective to every project. I believe in storytelling through wardrobe and the transformative power of personal style.</p>
+  </section>
+
+  <footer>
+    <p>Contact: <a href="mailto:ursula@example.com">ursula@example.com</a></p>
+    <p>&copy; 2025 Ursula Crawford</p>
+  </footer>
+</body>
+
+</html>
