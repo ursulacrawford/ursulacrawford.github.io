@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ursula Crawford | Home</title>
   <link href="https://fonts.googleapis.com/css2?family=Messapia&family=Playfair+Display:wght@500&family=Inter:wght@300;500&display=swap" rel="stylesheet">
- <link rel="icon" href="faviconuc.png" type="image/png">
   <style>
     body {
       margin: 0;
@@ -27,7 +26,6 @@
       font-size: 3rem;
       margin-bottom: 10px;
     }
-    
 
     nav {
       text-align: center;
@@ -45,40 +43,36 @@
       text-decoration: underline;
     }
 
+    .scroll-gallery {
+      overflow: hidden;
+      white-space: nowrap;
+      box-sizing: border-box;
+      position: relative;
+      padding: 40px 0;
     }
-.scroll-gallery {
-  overflow: hidden;
-  position: relative;
-  padding: 40px 0;
-}
 
-.scroll-track {
-  display: flex;
-  width: max-content;
-  animation: scroll 50s linear infinite;
-}
+    .scroll-gallery .scroll-track {
+      display: inline-block;
+      animation: scroll 35s linear infinite;
+    }
 
-.scroll-track img {
-  height: 500px;
-  width: auto;
-  margin-left: -50px;
-  object-fit: cover;
-  border-radius: 0;
-  z-index: 1;
-}
+    .scroll-gallery img {
+      height: 350px;
+      width: auto;
+      margin-right: -60px;
+      object-fit: cover;
+      border-radius: 0;
+    }
 
-.scroll-track img:first-child {
-  margin-left: 0;
-}
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
 
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
     footer {
       text-align: center;
       padding: 30px 20px;
@@ -86,21 +80,12 @@
       color: #777;
       border-top: 1px solid #ddd;
     }
-    .subheading {
-  font-family: 'Inter', sans-serif;
-  font-weight: 300;
-  font-size: 1.25rem;
-  color: #666;
-  margin-top: -10px;
-  margin-bottom: 20px;
-}
   </style>
 </head>
 
 <body>
   <header>
-    <h1>URSULA CRAWFORD</h1>
-    <h2 class="subheading">Styling | Casting</h2>
+    <h1>Ursula Crawford</h1>
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
