@@ -8,6 +8,12 @@
   <link rel="icon" href="faviconuc.png" type="image/png">
   <link href="https://fonts.googleapis.com/css2?family=Messapia&family=Playfair+Display:wght@500&family=Inter:wght@300;500&display=swap" rel="stylesheet">
   <style>
+    /* Reset link styles globally */
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
@@ -36,7 +42,7 @@
       margin: 0 10px;
       font-weight: 500;
       color: #333;
-      text-decoration: none;
+      /* text-decoration reset by global rule */
     }
 
     nav a:hover {
@@ -65,12 +71,15 @@
     }
 
     @keyframes scroll {
-      0% {
-        transform: translateX(0);
-      }
-      100% {
-        transform: translateX(-50%);
-      }
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    /* Social icon sizing */
+    .social-icon {
+      width: 30px;
+      height: auto;
+      vertical-align: middle;
     }
 
     footer {
@@ -94,7 +103,7 @@
   </header>
 
   <section class="scroll-gallery">
-        <div class="scroll-track">
+    <div class="scroll-track">
       <img src="hineweb.jpg" alt="Portfolio Image 1">
       <img src="kataweb.jpeg" alt="Portfolio Image 2">
       <img src="naywebjpg.jpg" alt="Portfolio Image 3">
@@ -113,7 +122,7 @@
     </div>
   </section>
 
-   <footer>
+  <footer>
     <p>EMAIL ME: <a href="mailto:ursulacrawford1@gmail.com">ursulacrawford1@gmail.com</a></p>
     <p>
       <a href="https://www.instagram.com/ursula0040" target="_blank">
@@ -122,7 +131,8 @@
     </p>
     <p>&copy; 2025 Ursula Crawford</p>
   </footer>
-  </body>
+</body>
 
 </html>
+
 
