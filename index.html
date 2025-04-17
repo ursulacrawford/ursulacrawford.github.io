@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ursula Crawford | CV</title>
+  <title>Ursula Crawford | Home</title>
   <link rel="icon" href="faviconuc.png" type="image/png">
   <link href="https://fonts.googleapis.com/css2?family=Messapia&family=Playfair+Display:wght@500&family=Inter:wght@300;500&display=swap" rel="stylesheet">
   <style>
@@ -13,7 +13,6 @@
       font-family: 'Inter', sans-serif;
       background-color: #fefefe;
       color: #1a1a1a;
-      line-height: 1.6;
     }
 
     header {
@@ -31,7 +30,6 @@
     nav {
       text-align: center;
       margin-top: 10px;
-      position: relative;
     }
 
     nav a {
@@ -39,61 +37,40 @@
       font-weight: 500;
       color: #333;
       text-decoration: none;
-      position: relative;
     }
 
     nav a:hover {
       text-decoration: underline;
     }
 
-    .preview {
-      display: none;
-      position: absolute;
-      top: 40px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 200px;
-      height: auto;
-      z-index: 10;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-
-    nav a:hover .preview,
-    .cv a:hover .preview {
-      display: block;
-    }
-
-    .cv {
-      padding: 60px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    .cv h2 {
-      font-family: 'Playfair Display', serif;
-      font-size: 2rem;
-      margin-bottom: 20px;
-      text-align: center;
-    }
-
-    .cv ul {
-      list-style-type: none;
-      padding: 0;
-    }
-
-    .cv li {
-      margin-bottom: 15px;
-    }
-
-    .cv a {
+    .scroll-gallery {
+      overflow: hidden;
+      white-space: nowrap;
+      box-sizing: border-box;
       position: relative;
+      padding: 40px 0;
     }
 
-    .cv .preview {
-      top: -10px;
-      left: 100%;
-      transform: translateX(10px);
-      width: 160px;
+    .scroll-gallery .scroll-track {
+      display: inline-block;
+      animation: scroll 30s linear infinite;
+    }
+
+    .scroll-gallery img {
+      height: 500px;
+      width: auto;
+      margin-right: -40px;
+      object-fit: cover;
+      border-radius: 0;
+    }
+
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
     }
 
     footer {
@@ -102,83 +79,41 @@
       font-size: 0.9rem;
       color: #777;
     }
-
-    a {
-      color: #333 !important;
-      text-decoration: none !important;
-    }
-
-    a:hover {
-      text-decoration: none !important;
-    }
-
-    .social-icon {
-      width: 18px;
-      height: 18px;
-      vertical-align: middle;
-    }
   </style>
 </head>
 
 <body>
   <header>
-    <h1>Ursula Crawford</h1>
+    <h1>URSULA CRAWFORD</h1>
+    <h2 class="subheading">Styling | Casting</h2>
     <nav>
-      <a href="index.html">Home
-      </a>
-      <a href="about.html">About
-      </a>
-      <a href="cv.html">CV
-      </a>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="cv.html">CV</a>
     </nav>
   </header>
 
-  <section class="cv">
-    <h2>CV</h2>
-    <ul>
-      <li><strong>CASTING:</strong><br>
-        <a href="https://www.selfagency.co.nz/" target="_blank">Agent, Self Agency, 2024–Present
-          <img src="images/self-agency.jpg" alt="Self Agency Preview" class="preview">
-        </a><br>
-      </li>
-      <li><strong>STYLING:</strong><br>
-        <a href="XXXXX" target="_blank">Heidi Simpson, Heart In Danger, music video
-          <img src="images/heidi-simpson.jpg" alt="Heidi Simpson Preview" class="preview">
-        </a><br>
-        <a href="XXXXX" target="_blank">Les Mills, New Zealand campaign
-          <img src="images/les-mills.jpg" alt="Les Mills Preview" class="preview">
-        </a><br>
-        <a href="https://gloria.nz/?fbclid=PAZXh0bgNhZW0CMTEAAafRkKZfn81bQvDfHyUlDPTGfFHetLc1zlysqqyaXEq7sgqV-tunnixDQ0rxKw_aem_K3fwGxxw7lx-XMPNne7PGw" target="_blank">Gloria, AW25
-          <img src="images/gloria-aw25.jpg" alt="Gloria AW25 Preview" class="preview">
-        </a><br>
-      </li>
-      <li><strong>ASSISTING:</strong><br>
-        <a href="https://www.youtube.com/watch?v=AZfWMXnce4A" target="_blank">Les Mills, ‘Live Forward’, campaign
-          <img src="images/live-forward.jpg" alt="Live Forward Preview" class="preview">
-        </a><br>
-        <a href="https://www.youtube.com/watch?v=PKNLC-RhZD4" target="_blank">Riiki Reid, ‘The City’, music video
-          <img src="images/riiki-reid.jpg" alt="Riiki Reid Preview" class="preview">
-        </a><br>
-        <a href="https://mundanemag.com/jack-panther-drops-new-ep-why-dont-you-come-over/" target="_blank">Jack Panther, ‘Why don't you come over?’, press images
-          <img src="images/jack-panther.jpg" alt="Jack Panther Preview" class="preview">
-        </a><br>
-        <a href="https://www.instagram.com/p/Coa71WuL_1c/" target="_blank">Broods, press images
-          <img src="images/broods.jpg" alt="Broods Preview" class="preview">
-        </a><br>
-        <a href="https://www.astrophemagazine.com/astrophe-magazine/soft-centre" target="_blank">Astrophe Magazine, Australia
-          <img src="images/astrophe.jpg" alt="Astrophe Preview" class="preview">
-        </a><br>
-        <a href="https://togetherjournal.com/gloria-know-thyself/" target="_blank">Gloria, ‘Know Thyself’
-          <img src="images/gloria-know-thyself.jpg" alt="Gloria Know Thyself Preview" class="preview">
-        </a><br>
-        <a href="https://www.youtube.com/watch?v=gz9S1e3_PGQ" target="_blank">Sealord, 'Dunch', campaign
-          <img src="images/sealord.jpg" alt="Sealord Preview" class="preview">
-        </a><br>
-      </li>
-    </ul>
+  <section class="scroll-gallery">
+        <div class="scroll-track">
+      <img src="hineweb.jpg" alt="Portfolio Image 1">
+      <img src="kataweb.jpeg" alt="Portfolio Image 2">
+      <img src="naywebjpg.jpg" alt="Portfolio Image 3">
+      <img src="heidiweb.jpg" alt="Portfolio Image 4">
+      <img src="hineweb2.jpeg" alt="Portfolio Image 5">
+      <img src="elliotweb.jpg" alt="Portfolio Image 6">
+      <img src="timoweb.jpg" alt="Portfolio Image 7">
+      <!-- repeat images to ensure continuous scroll -->
+      <img src="hineweb.jpg" alt="Portfolio Image 1">
+      <img src="kataweb.jpeg" alt="Portfolio Image 2">
+      <img src="naywebjpg.jpg" alt="Portfolio Image 3">
+      <img src="heidiweb.jpg" alt="Portfolio Image 4">
+      <img src="hineweb2.jpeg" alt="Portfolio Image 5">
+      <img src="elliotweb.jpg" alt="Portfolio Image 6">
+      <img src="timoweb.jpg" alt="Portfolio Image 7">
+    </div>
   </section>
 
-  <footer>
+   <footer>
     <p>EMAIL ME: <a href="mailto:ursulacrawford1@gmail.com">ursulacrawford1@gmail.com</a></p>
     <p>
       <a href="https://www.instagram.com/ursula0040" target="_blank">
@@ -187,8 +122,4 @@
     </p>
     <p>&copy; 2025 Ursula Crawford</p>
   </footer>
-</body>
-
-</html>
-
 
