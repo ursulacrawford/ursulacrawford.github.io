@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Beth+Ellen&display=swap" rel="stylesheet">
   <style>
+    /* Reset link styles globally */
     a {
       text-decoration: none;
       color: inherit;
@@ -28,21 +29,21 @@
       text-align: center;
     }
 
-    header h1 {
+     header h1 {
       font-family: 'Cinzel', serif;
       font-weight: 700;
       font-size: 3rem;
       margin-bottom: 10px;
       letter-spacing: 0.15em;
     }
-
-    .subheading {
+      .subheading {
       font-family: 'Beth Ellen', cursive;
       font-size: 1.2rem;
       letter-spacing: 0.1em;
       margin: 0;
       color: #555;
     }
+
 
     nav {
       text-align: center;
@@ -53,6 +54,7 @@
       margin: 0 10px;
       font-weight: 500;
       color: #333;
+      /* text-decoration reset by global rule */
     }
 
     nav a:hover {
@@ -63,26 +65,17 @@
       overflow: hidden;
       white-space: nowrap;
       box-sizing: border-box;
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      padding: 20px 0;
-      background-color: #fff;
-      z-index: 999;
+      position: relative;
+      padding: 40px 0;
     }
 
     .scroll-gallery .scroll-track {
-      display: flex;
-      animation: scroll 20s linear infinite;
-    }
-
-    .scroll-gallery .scroll-track:hover {
-      animation-play-state: paused;
+      display: inline-block;
+      animation: scroll 30s linear infinite;
     }
 
     .scroll-gallery img {
-      height: 200px;
+      height: 500px;
       width: auto;
       margin-right: -40px;
       object-fit: cover;
@@ -94,6 +87,7 @@
       100% { transform: translateX(-50%); }
     }
 
+    /* Social icon sizing */
     .social-icon {
       width: 30px;
       height: auto;
@@ -129,7 +123,7 @@
       <img src="hineweb2.jpeg" alt="Portfolio Image 5">
       <img src="elliotweb.jpg" alt="Portfolio Image 6">
       <img src="timoweb.jpg" alt="Portfolio Image 7">
-      <!-- repeat images for seamless loop -->
+      <!-- repeat images to ensure continuous scroll -->
       <img src="hineweb.jpg" alt="Portfolio Image 1">
       <img src="kataweb.jpeg" alt="Portfolio Image 2">
       <img src="naywebjpg.jpg" alt="Portfolio Image 3">
@@ -152,6 +146,3 @@
 </body>
 
 </html>
-
-
-
