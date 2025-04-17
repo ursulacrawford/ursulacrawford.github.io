@@ -63,21 +63,26 @@
       overflow: hidden;
       white-space: nowrap;
       box-sizing: border-box;
-      position: relative;
-      padding: 40px 0;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 20px 0;
+      background-color: #fff;
+      z-index: 999;
     }
 
     .scroll-gallery .scroll-track {
-      display: flex; /* 🔹 Changed from inline-block to flex */
-      animation: scroll 30s linear infinite;
+      display: flex;
+      animation: scroll 20s linear infinite;
     }
 
     .scroll-gallery .scroll-track:hover {
-      animation-play-state: paused; /* 🔹 Pause on hover */
+      animation-play-state: paused;
     }
 
     .scroll-gallery img {
-      height: 500px;
+      height: 200px;
       width: auto;
       margin-right: -40px;
       object-fit: cover;
@@ -147,5 +152,6 @@
 </body>
 
 </html>
+
 
 
