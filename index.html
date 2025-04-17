@@ -74,20 +74,14 @@
       animation: scroll 40s linear infinite;
     }
 
-        .scroll-gallery img {
+    .scroll-gallery img {
       height: 500px;
       width: auto;
       margin-right: -40px;
       object-fit: cover;
       border-radius: 0;
-      filter: grayscale(100%);            
-      transition: filter 0.3s ease;       
     }
 
-    .scroll-gallery img:hover {
-      filter: grayscale(0%);              
-    }
-    
     @keyframes scroll {
       0% { transform: translateX(0); }
       100% { transform: translateX(-50%); }
