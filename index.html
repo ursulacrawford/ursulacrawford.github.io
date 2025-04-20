@@ -69,6 +69,7 @@
       padding: 40px 0;
     }
 
+
     .scroll-gallery .scroll-track {
       display: inline-block;
       animation: scroll 30s linear infinite;
@@ -78,13 +79,14 @@
     animation-play-state: paused;
     }
 
+
     .scroll-gallery img {
-      height: 500px;
-      width: auto;
-      margin-right: -40px;
-      object-fit: cover;
-      border-radius: 0;
-    }
+  width: 300px; /* Set to your preferred fixed width */
+  height: 500px;
+  object-fit: cover;
+  margin-right: 20px; /* or adjust spacing */
+  border-radius: 0;
+}
 
     @keyframes scroll {
       0% { transform: translateX(0); }
