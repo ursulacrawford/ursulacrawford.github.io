@@ -1,148 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
+  <title>Talent</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ursula Crawford | About</title>
-  <link rel="icon" href="faviconuc.png" type="image/png">
-<!-- Google Fonts: Cinzel, Inter, Beth Ellen -->
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;500&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Beth+Ellen&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: #fefefe;
-      color: #1a1a1a;
-      line-height: 1.6;
-    }
-
-    header {
-      background-color: #fff;
-      padding: 60px 20px 30px;
-      text-align: center;
-    }
-
-   header h1 {
-      font-family: 'Cinzel', serif;
-      font-weight: 700;
-      font-size: 3rem;
-      margin-bottom: 10px;
-      letter-spacing: 0.15em;
-    }
-      .subheading {
-      font-family: 'Beth Ellen', cursive;
-      font-size: 1.2rem;
-      letter-spacing: 0.1em;
-      margin: 0;
-      color: #555;
-    }
-
-    nav {
-      text-align: center;
-      margin-top: 10px;
-    }
-
-    nav a {
-      margin: 0 10px;
-      font-weight: 500;
-      color: #333;
-      text-decoration: none;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    .about {
-      display: flex;
-      flex-wrap: wrap;
-      padding: 60px 20px;
-      max-width: 1100px;
-      margin: auto;
-      gap: 40px;
-    }
-
-    .about-text {
-      flex: 1 1 400px;
-      font-size: 1.1rem;
-    }
-
-    .about-text h2 {
-      font-family: 'Playfair Display', serif;
-      font-size: 2rem;
-      margin-bottom: 20px;
-    }
-
-    .about-image {
-      flex: 1 1 400px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .about-image img {
-      width: 100%;
-      max-width: 500px;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    }
-
-    footer {
-      text-align: center;
-      padding: 30px 20px;
-      font-size: 0.9rem;
-      color: #777;
-    }
-
-    a {
-      color: #333;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-       /* Social icon sizing */
-    .social-icon {
-      width: 30px;
-      height: auto;
-      vertical-align: middle;
-  </style>
+ <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="favicon.png" />
 </head>
 
-<body>
-  <header>
-    <h1>URSULA CRAWFORD</h1>
-    <h2 class="subheading">Styling | Casting</h2>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="cv.html">CV</a>
-    </nav>
-  </header>
+<body class="page-talent">
 
-  <section class="about">
-    <div class="about-text">
-      <h2>About Me</h2>
-      <p>Ursula Crawford is a stylist and casting director from Aotearoa, New Zealand, now based in Paris.</p>
-    </div>
-    <div class="about-image">
-      <img src="aboutursula.jpg" alt="Ursula Crawford Portrait">
-    </div>
-  </section>
+ <!-- Navigation Bar -->
+<nav class="navbar">
+  <div class="logo">
+    <a href="index.html">
+      <img src="logo.png" alt="Logo" class="logo-img" />
+    </a>
+  </div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="talent.html">Talent</a></li>
+    <li class="dropdown" tabindex="0" aria-haspopup="true" aria-expanded="false">
+      <a href="#" class="dropdown-toggle">Reach Us</a>
+      <ul class="dropdown-menu" role="menu">
+        <li><a href="contact.html" role="menuitem">Contact</a></li>
+        <li><a href="be_represented_by_us.html" role="menuitem">Be represented </a></li>
+      </ul>
+       <li><a href="cast.html">Cast</a></li>
+    </li>
+  </ul>
+</nav>
 
-  <footer>
-    <p>EMAIL ME: <a href="mailto:ursulacrawford1@gmail.com">ursulacrawford1@gmail.com</a></p>
-    <p>
-      <a href="https://www.instagram.com/ursula0040" target="_blank">
-        <img src="instagram.png" alt="Instagram" class="social-icon">
+  <!-- Main Content -->
+  <main class="main-content max-width">
+    <div class="talent-grid">
+
+      <!-- Talent Cards -->
+      <a href="aaron.html" class="talent-card">
+        <img src="aaron.jpeg" alt="Portrait of Aaron, agency talent" class="talent-img" loading="lazy">
+        <div class="overlay-text">AARON</div>
       </a>
-    </p>
-    <p>&copy; 2025 Ursula Crawford</p>
-  </footer>
-</body>
 
+       <a href="adray.html" class="talent-card">
+        <img src="adray.jpg" alt="Portrait of Adray, agency talent" class="talent-img" loading="lazy">
+        <div class="overlay-text">Adray</div>
+      </a>
+
+       <a href="sivan.html" class="talent-card">
+        <img src="sivian.jpg" alt="Portrait of Sivan, agency talent" class="talent-img" loading="lazy">
+        <div class="overlay-text">Sivan ✈︎</div>
+      </a>
+
+      <a href="ursula.html" class="talent-card">
+        <img src="ursula.jpg" alt="Portrait of Ursula, agency talent" class="talent-img" loading="lazy">
+        <div class="overlay-text">Ursula ✈︎</div>
+      </a>
+
+      <a href="veronica.html" class="talent-card">
+        <img src="veronica.jpeg" alt="Portrait of Veronica, agency talent" class="talent-img" loading="lazy">
+        <div class="overlay-text">Veronica ✈︎</div>
+      </a>
+
+       <a href="hauata.html" class="talent-card">
+        <img src="hauata.jpg" alt="Portrait of Hauata, agency talent" class="talent-img" loading="lazy">
+        <div class="overlay-text">Hauata</div>
+      </a>
+
+      <a href="nayan.html" class="talent-card">
+        <img src="nayan.jpg" alt="Portrait of Nayan, agency talent" class="talent-img" loading="lazy">
+        <div class="overlay-text">Nayan ✈︎</div>
+      </a>
+
+      <a href="ngahere.html" class="talent-card">
+        <img src="ngahere.jpeg" alt="Portrait of Ngahere, agency talent" class="talent-img" loading="lazy">
+        <div class="overlay-text">NGAHERE</div>
+      </a>
+
+      <a href="nayesha.html" class="talent-card">
+        <img src="nayesha.jpeg" alt="Portrait of Nayesha, agency talent" class="talent-img" loading="lazy">
+        <div class="overlay-text">NAYESHA</div>
+      </a>
+
+      <a href="jake.html" class="talent-card">
+        <img src="jake.jpg" alt="Portrait of Jake, agency talent" class="talent-img" loading="lazy">
+        <div class="overlay-text">JAKE</div>
+      </a>
+
+      <a href="elliot.html" class="talent-card">
+        <img src="elliot.jpg" alt="Portrait of Elliot, agency talent" class="talent-img" loading="lazy">
+        <div class="overlay-text">ELLIOT</div>
+      </a>
+
+      <a href="sam.html" class="talent-card">
+        <img src="sam.jpeg" alt="Portrait of Sam, agency talent" class="talent-img" loading="lazy">
+        <div class="overlay-text">SAM</div>
+      </a>
+      
+      <a href="kata.html" class="talent-card">
+        <img src="kata.jpg" alt="Portrait of Kata, agency talent" class="talent-img" loading="lazy">
+        <div class="overlay-text">KATA</div>
+      </a>
+
+      <a href="timo.html" class="talent-card">
+        <img src="timo.jpg" alt="Portrait of Timo, agency talent" class="talent-img" loading="lazy">
+        <div class="overlay-text">TIMO</div>
+      </a>
+
+       <a href="hine.html" class="talent-card">
+        <img src="hine.jpg" alt="Portrait of Hine, agency talent" class="talent-img" loading="lazy">
+        <div class="overlay-text">HINE</div>
+      </a>
+
+      <a href="haidee.html" class="talent-card">
+        <img src="haidee.jpeg" alt="Portrait of Haidee, agency talent" class="talent-img" loading="lazy">
+        <div class="overlay-text">HAIDEE</div>
+      </a>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p><a href="https://www.instagram.com/self_agency_" target="_blank">@self_agency_</a></p>
+  </footer>
+
+  <!-- Dropdown toggle script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const toggles = document.querySelectorAll('.dropdown-toggle');
+      toggles.forEach(toggle => {
+        toggle.addEventListener('click', function (e) {
+          e.preventDefault();
+          const expanded = this.getAttribute('aria-expanded') === 'true';
+          this.setAttribute('aria-expanded', !expanded);
+          this.parentElement.classList.toggle('open');
+        });
+      });
+
+      document.addEventListener('click', function (e) {
+        toggles.forEach(toggle => {
+          const parent = toggle.parentElement;
+          if (!parent.contains(e.target)) {
+            toggle.setAttribute('aria-expanded', 'false');
+            parent.classList.remove('open');
+          }
+        });
+      });
+    });
+  </script>
+
+</body>
 </html>
 
