@@ -1,0 +1,49 @@
+<!-- scouting.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Scouting</title>
+  <link rel="stylesheet" href="style.css"> <!-- Assuming you have a CSS file -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background: #f9f9f9;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .photo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 16px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .photo-grid img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      object-fit: cover;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Scouting</h1>
+
+  <div class="photo-grid">
+    <img src="images/scout1.jpg" alt="Scout 1">
+    <img src="images/scout2.jpg" alt="Scout 2">
+    <img src="images/scout3.jpg" alt="Scout 3">
+    <img src="images/scout4.jpg" alt="Scout 4">
+    <!-- Add more images as needed -->
+  </div>
+
+</body>
+</html>
