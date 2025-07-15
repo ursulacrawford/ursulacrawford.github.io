@@ -107,7 +107,7 @@ h1 {
 }
 /* Stagger column 2 */
 .grid-item:nth-child(3n+2) {
-  margin-top: 60px;
+  margin-top: 90px;
 }
 
 /* Stagger column 3 more */
