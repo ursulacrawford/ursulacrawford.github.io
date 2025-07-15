@@ -85,36 +85,66 @@ h1 {
   line-height: 1.5;
 }
 
-.portfolio-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  grid-auto-rows: 10px; /* base height unit for spanning */
-  gap: 16px;
+.zigzag-grid {
+  column-count: 3; /* Number of vertical columns */
+  column-gap: 24px;
   padding: 40px;
 }
 
-.portfolio-grid figure {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
+.grid-item {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 24px;
+  break-inside: avoid; /* Prevents images from being cut */
 }
 
-.portfolio-grid img {
+.grid-item img {
   width: 100%;
   height: auto;
   display: block;
-  object-fit: cover;
   border-radius: 4px;
+  object-fit: cover;
 }
 
-/* Optional figcaption styling */
-.portfolio-grid figcaption {
+/* Caption below image */
+.grid-item p {
   margin-top: 8px;
   font-size: 14px;
   text-align: center;
-  color: #333;
   font-family: sans-serif;
+  color: #333;
 }
+
+.zigzag-grid {
+  column-count: 3; /* Number of vertical columns */
+  column-gap: 24px;
+  padding: 40px;
+}
+
+.grid-item {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 24px;
+  break-inside: avoid; /* Prevents images from being cut */
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+/* Caption below image */
+.grid-item p {
+  margin-top: 8px;
+  font-size: 14px;
+  text-align: center;
+  font-family: sans-serif;
+  color: #333;
+}
+
 
 /* Button style */
 .agency-button {
