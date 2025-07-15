@@ -70,6 +70,43 @@ h1 {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
 }
 
+.photo-grid figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+}
+
+.photo-grid figcaption {
+  font-size: 14px;
+  color: #444;
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* Button style */
+.agency-button {
+  display: inline-block;
+  margin-top: 6px;
+  padding: 6px 14px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #000;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  text-decoration: none;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.agency-button:hover {
+  background-color: #000;
+  color: #fff;
+  border-color: #000;
+}
+
+
 /* Footer (optional for consistency) */
 footer {
   text-align: center;
