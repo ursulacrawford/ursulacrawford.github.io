@@ -88,22 +88,22 @@ h1 {
 /* Button style */
 .agency-button {
   display: inline-block;
-  padding: 12px 28px;
-  font-size: 14px;
+  padding: 8px 20px; /* thinner button */
+  font-size: 13px;
   font-weight: bold;
   text-transform: uppercase;
   color: white;
   text-decoration: none;
-  background: linear-gradient(135deg, #ff4ecb, #ff7fab); /* Pink to purple gradient */
+  background: linear-gradient(135deg, #ff4ecb, #ff7fab); /* pink gradient */
   border: none;
-  border-radius: 40px;
-  box-shadow: 4px 6px 0px #00000066;
+  border-radius: 32px; /* keeps pill shape */
+  box-shadow: 4px 5px 0px #000000; /* black rim/shadow */
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .agency-button:hover {
-  transform: translateY(-3px);
-  box-shadow: 6px 8px 0px #00000066;
+  transform: translateY(-2px);
+  box-shadow: 6px 7px 0px #000000;
 }
 
 
