@@ -105,6 +105,15 @@ h1 {
   border-radius: 4px;
   object-fit: cover;
 }
+/* Stagger column 2 */
+.grid-item:nth-child(3n+2) {
+  margin-top: 60px;
+}
+
+/* Stagger column 3 more */
+.grid-item:nth-child(3n) {
+  margin-top: 120px;
+}
 
 /* Caption below image */
 .grid-item p {
