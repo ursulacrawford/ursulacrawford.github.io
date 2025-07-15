@@ -88,22 +88,22 @@ h1 {
 /* Button style */
 .agency-button {
   display: inline-block;
-  margin-top: 6px;
-  padding: 6px 14px;
-  font-size: 12px;
+  padding: 12px 28px;
+  font-size: 14px;
+  font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  color: #000;
-  background-color: #f0f0f0;
-  border: 1px solid #ccc;
+  color: white;
   text-decoration: none;
-  transition: background 0.3s ease, color 0.3s ease;
+  background: linear-gradient(135deg, #ff4ecb, #ff7fab); /* Pink to purple gradient */
+  border: none;
+  border-radius: 40px;
+  box-shadow: 4px 6px 0px #00000066;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .agency-button:hover {
-  background-color: #000;
-  color: #fff;
-  border-color: #000;
+  transform: translateY(-3px);
+  box-shadow: 6px 8px 0px #00000066;
 }
 
 
