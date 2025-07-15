@@ -57,10 +57,9 @@ h1 {
 /* Photo styling */
 .photo-grid img {
   width: 100%;
-  height: auto;
+  aspect-ratio: 2 / 3;       /* Enforces portrait shape */
+  object-fit: cover;         /* Crop image to fill shape */
   display: block;
-  object-fit: cover;
-  border-radius: 0;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
