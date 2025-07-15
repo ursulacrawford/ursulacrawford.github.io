@@ -145,6 +145,17 @@ h1 {
   color: #333;
 }
 
+@media (max-width: 900px) {
+  .zigzag-grid {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .zigzag-grid {
+    column-count: 1;
+  }
+}
 
 /* Button style */
 .agency-button {
