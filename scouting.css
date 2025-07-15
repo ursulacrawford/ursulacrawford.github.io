@@ -1,0 +1,91 @@
+/* scouting.css */
+
+/* Reset and base font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #000;
+  padding: 40px 20px;
+}
+
+/* Header navigation bar */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #999;
+}
+
+/* Page title */
+h1 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: normal;
+  margin: 40px 0;
+  letter-spacing: 1px;
+}
+
+/* Grid layout similar to Unique Models */
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto 60px;
+}
+
+/* Photo styling */
+.photo-grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.photo-grid img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* Footer (optional for consistency) */
+footer {
+  text-align: center;
+  font-size: 12px;
+  color: #999;
+  padding: 40px 0;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+}
