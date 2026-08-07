@@ -2,158 +2,70 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ursula Crawford | Home</title>
-  <link rel="icon" href="faviconuc.png" type="image/png">
-  <!-- Google Fonts: Cinzel, Inter, Beth Ellen -->
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;500&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Beth+Ellen&display=swap" rel="stylesheet">
-  <style>
-    /* Reset link styles globally */
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
 
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: #fefefe;
-      color: #1a1a1a;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    header {
-      background-color: #fff;
-      padding: 60px 20px 30px;
-      text-align: center;
-    }
+<title>Ursula Crawford</title>
 
-     header h1 {
-      font-family: 'Cinzel', serif;
-      font-weight: 700;
-      font-size: 3rem;
-      margin-bottom: 10px;
-      letter-spacing: 0.15em;
-    }
-      .subheading {
-      font-family: 'Beth Ellen', cursive;
-      font-size: 1.2rem;
-      letter-spacing: 0.1em;
-      margin: 0;
-      color: #555;
-    }
+<link rel="stylesheet" href="style.css">
 
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Inter:wght@300;400&display=swap" rel="stylesheet">
 
-    nav {
-      text-align: center;
-      margin-top: 10px;
-    }
-
-    nav a {
-      margin: 0 10px;
-      font-weight: 500;
-      color: #333;
-      /* text-decoration reset by global rule */
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    .scroll-gallery {
-      overflow: hidden;
-      white-space: nowrap;
-      box-sizing: border-box;
-      position: relative;
-      padding: 40px 0;
-    }
-
-
-    .scroll-gallery .scroll-track {
-      display: inline-block;
-      animation: scroll 30s linear infinite;
-    }
-    
-    .scroll-track:hover {
-    animation-play-state: paused;
-    }
-
-    .scroll-gallery img {
-  height: 500px;
-  width: auto;
-  margin-right: -40px;
-  object-fit: cover;
-  border-radius: 0;
-}
-
-    @keyframes scroll {
-      0% { transform: translateX(0); }
-      100% { transform: translateX(-50%); }
-    }
-
-    /* Social icon sizing */
-    .social-icon {
-      width: 30px;
-      height: auto;
-      vertical-align: middle;
-    }
-
-    footer {
-      text-align: center;
-      padding: 30px 20px;
-      font-size: 0.9rem;
-      color: #777;
-    }
-  </style>
 </head>
 
-<body>
-  <header>
-    <h1>URSULA CRAWFORD</h1>
-    <h2 class="subheading">Styling | Casting</h2>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="cv.html">CV</a>
-    </nav>
-  </header>
 
-  <section class="scroll-gallery">
-    <div class="scroll-track">
-      <img src="hineweb.jpg" alt="Portfolio Image 1">
-      <img src="kataweb.jpeg" alt="Portfolio Image 2">
-      <img src="naywebjpg.jpg" alt="Portfolio Image 3">
-      <img src="heidiweb.jpg" alt="Portfolio Image 4">
-      <img src="hineweb2.jpeg" alt="Portfolio Image 5">
-      <img src="elliotweb.jpg" alt="Portfolio Image 6">
-      <img src="timoweb.jpg" alt="Portfolio Image 7">
-      <img src="nayweb2.jpg" alt="Portfolio Image 8">
-      <img src="elliotweb2.jpg" alt="Portfolio Image 9">
-      <img src="timoweb2.jpg" alt="Portfolio Image 10">
-      <!-- repeat images to ensure continuous scroll -->
-      <img src="hineweb.jpg" alt="Portfolio Image 1">
-      <img src="kataweb.jpeg" alt="Portfolio Image 2">
-      <img src="naywebjpg.jpg" alt="Portfolio Image 3">
-      <img src="heidiweb.jpg" alt="Portfolio Image 4">
-      <img src="hineweb2.jpeg" alt="Portfolio Image 5">
-      <img src="elliotweb.jpg" alt="Portfolio Image 6">
-      <img src="timoweb.jpg" alt="Portfolio Image 7">
-       <img src="nayweb2.jpg" alt="Portfolio Image 8">
-      <img src="elliotweb2.jpg" alt="Portfolio Image 9">
-      <img src="timoweb2.jpg" alt="Portfolio Image 10">
-    </div>
-  </section>
+<body class="home">
 
-  <footer>
-    <p>EMAIL ME: <a href="mailto:ursulacrawford1@gmail.com">ursulacrawford1@gmail.com</a></p>
-    <p>
-      <a href="https://www.instagram.com/ursula0040" target="_blank">
-        <img src="instagram.png" alt="Instagram" class="social-icon">
-      </a>
-    </p>
-    <p>&copy; 2025 Ursula Crawford</p>
-  </footer>
+
+<header>
+
+<a class="logo" href="index.html">
+URSULA CRAWFORD
+</a>
+
+
+<nav>
+
+<a href="work.html">Work</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+
+</nav>
+
+
+</header>
+
+
+
+<main>
+
+
+<section class="hero">
+
+
+<img 
+src="images/hero.jpg" 
+alt="Ursula Crawford portfolio image"
+>
+
+
+</section>
+
+
+</main>
+
+
+<footer>
+
+Fashion Stylist & Casting Director
+
+</footer>
+
+
+
+<script src="script.js"></script>
+
 </body>
 
 </html>
